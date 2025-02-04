@@ -1,0 +1,640 @@
+/* 在文件顶部添加这些重置样式 */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body, main, section {
+    background-color: #ffffff !important;
+    color: #333 !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+header, footer {
+    background-color: #333 !important;
+    color: #fff !important;
+    border: none !important;
+}
+
+/* 移除所有可能的背景图片或渐变 */
+body::before,
+body::after,
+main::before,
+main::after,
+section::before,
+section::after {
+    content: none !important;
+    background: none !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+/* 修改 main 样式 */
+main {
+    padding: 20px;
+    margin: 0; /* 移除 margin */
+    background-color: #ffffff;
+    border: none;
+    box-shadow: none;
+}
+
+/* 修改 section 样式 */
+section {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #ffffff;
+    border: none;
+    box-shadow: none;
+}
+
+@font-face {
+    font-family: 'iconfont';
+    src: url('//at.alicdn.com/t/font_1672314_g11o8z0vqu.eot');
+    src: url('//at.alicdn.com/t/font_1672314_g11o8z0vqu.eot?#iefix') format('embedded-opentype'),
+         url('//at.alicdn.com/t/font_1672314_g11o8z0vqu.woff2') format('woff2'),
+         url('//at.alicdn.com/t/font_1672314_g11o8z0vqu.woff') format('woff'),
+         url('//at.alicdn.com/t/font_1672314_g11o8z0vqu.ttf') format('truetype'),
+         url('//at.alicdn.com/t/font_1672314_g11o8z0vqu.svg#iconfont') format('svg');
+}
+
+.bilibili-icon {
+    fill: currentColor;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #ffffff;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 2rem 1rem 4rem; /* 增加底部内边距以容纳导航 */
+    position: relative; /* 为绝对定位的导航做准备 */
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+}
+
+.left-bottom-nav {
+    position: absolute;
+    bottom: 0.5rem;
+    left: 1rem;
+    z-index: 10;
+}
+
+.left-bottom-nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.left-bottom-nav ul li {
+    margin-right: 2px; /* 将间距从5px减少到2px */
+}
+
+.left-bottom-nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    padding: 4px 6px; /* 减小内边距 */
+    border-radius: 3px;
+    position: relative;
+    overflow: hidden;
+    background-color: transparent;
+    display: inline-block;
+}
+
+.left-bottom-nav ul li a:hover {
+    color: #fff;
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: scale(1.05);
+}
+
+/* 移除背景渐变效果 */
+.left-bottom-nav ul li a::before {
+    display: none;
+}
+
+nav {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center; /* 居中导航项 */
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ddd;
+}
+
+.logo {
+    width: 150px;
+    height: auto;
+    position: absolute;
+    top: 5px;
+    right: 15px;
+}
+
+main {
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 0;
+    box-shadow: none;
+    border: none;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    background-color: rgba(0, 0, 0, 0.6);
+    border: 2px solid #8b8b8b;
+    border-radius: 0;
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+.carousel {
+    /* 轮播图样式将在JavaScript中置 */
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.carousel img {
+    width: 100%;
+    height: auto;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 1rem; /* 进步减少上下内边距 */
+    text-align: center;
+    border: none;
+}
+
+footer h3 {
+    margin-bottom: 0.5rem; /* 进一步减少标题下方的间距 */
+    font-size: 1.2rem; /* 稍微再减小标题字体 */
+}
+
+.social-media {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap; /* 防止项目换行 */
+}
+
+.social-media li {
+    margin: 0 0.8rem; /* 调整左右间距 */
+    white-space: nowrap; /* 防止文字换行 */
+}
+
+.social-media li a {
+    color: #fff;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    font-size: 0.9rem; /* 稍微减小字体大小 */
+    padding: 5px 8px; /* 减少内边距 */
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.social-media li a i,
+.social-media li a .bilibili-icon {
+    margin-right: 6px; /* 图标和字之间的间距 */
+    font-size: 18px; /* 稍微减小图标大小 */
+    transition: transform 0.3s ease;
+}
+
+/* 为QQ图标添加特定样式 */
+.social-media li a .fab.fa-qq {
+    font-size: 22px; /* 稍微调整QQ图标大小 */
+}
+
+/* 在文件末尾添加或修改以下样式 */
+#file-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+#file-list li {
+    margin-bottom: 15px;
+}
+
+/* 修改和添加以下样式 */
+#file-list li a {
+    display: inline-flex;
+    align-items: center;
+    color: #333;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 1.5;
+    padding: 10px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    background-color: transparent; /* 移除背景色 */
+    border: none; /* 移除边框 */
+}
+
+#file-list li a:hover {
+    background-color: rgba(0, 0, 0, 0.05); /* 添加轻微的悬停效果 */
+    transform: translateX(10px);
+}
+
+#file-list li a i {
+    margin-right: 10px;
+    color: #cc0000; /* 保持PDF图标为红色 */
+    font-size: 24px;
+    transition: transform 0.3s ease;
+}
+
+#file-list li a:hover i {
+    transform: scale(1.2);
+}
+
+a, button {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+a:hover, button:hover {
+    color: #004080;
+}
+
+@media (max-width: 768px) {
+    header {
+        padding-bottom: 6rem; /* 在小屏幕增加多底部内边距 */
+    }
+
+    .header-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo {
+        margin-top: 1rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 0.5rem 0;
+    }
+
+    .left-bottom-nav {
+        width: 100%;
+        left: 0;
+        bottom: 0;
+        padding: 0.5rem;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .left-bottom-nav ul {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .left-bottom-nav ul li {
+        margin: 0.25rem 0.5rem;
+    }
+}
+
+/* 增大"欢迎来到HRMTR"的字体大小 */
+#home h2 {
+    font-size: 2.5rem; /* 增大字体大小 */
+    color: #333; /* 设置颜色 */
+    margin-bottom: 1rem; /* 添加底部间距 */
+    text-align: center; /* 居中对齐 */
+}
+
+/* 调整首页段落文字样式 */
+#home p {
+    font-size: 1.2rem; /* 稍微增大段落文字 */
+    text-align: center; /* 居中对齐 */
+    max-width: 800px; /* 限制最大宽度 */
+    margin: 0 auto; /* 居中显示 */
+}
+
+/* 统一所 h2 标题的样 */
+main section h2 {
+    font-size: 2.5rem; /* 与"欢迎来到HRMTR"相同的字体大小 */
+    color: #333; /* 设置颜色 */
+    margin-bottom: 1rem; /* 添加部距 */
+    text-align: center; /* 居中对齐 */
+}
+
+/* 调整段落文字样式，适用于所有部分 */
+main section p {
+    font-size: 1.2rem; /* 稍微增大段落文字 */
+    text-align: center; /* 居中对齐 */
+    max-width: 800px; /* 限制最大宽度 */
+    margin: 0 auto 1rem; /* 居中显示并添加底部间距 */
+}
+
+/* 确保图片和其他内容也居中 */
+main section {
+    text-align: center;
+}
+
+/* 特别处理文件列表，保持左对齐 */
+#files {
+    text-align: left;
+}
+
+/* 调整轮播图和地铁线路图的样式 */
+.carousel, #subway img {
+    max-width: 80%;
+    margin: 0 auto;
+    display: block;
+}
+
+/* 恢复哔哩哔哩图标 */
+.bilibili-icon {
+    width: 24px;
+    height: 24px;
+    fill: currentColor;
+    vertical-align: middle;
+}
+
+/* 恢复导航链接的特效 */
+.left-bottom-nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    padding: 6px 12px;
+    border-radius: 4px;
+    position: relative;
+    overflow: hidden;
+    background-color: transparent; /* 将背景色改为透明 */
+    display: inline-block;
+}
+
+.left-bottom-nav ul li a:hover {
+    color: #fff;
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.2); /* 保留悬停时的背色 */
+    transform: scale(1.05);
+}
+
+/* 移除背景渐变效果 */
+.left-bottom-nav ul li a::before {
+    display: none;
+}
+
+/* 恢复页脚社交媒体链接的特效 */
+.social-media li a {
+    color: #fff;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    font-size: 0.9rem;
+    padding: 5px 8px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.social-media li a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: all 0.4s ease;
+}
+
+.social-media li a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.social-media li a:hover::before {
+    left: 100%;
+}
+
+.social-media li a i,
+.social-media li a .bilibili-icon {
+    margin-right: 6px;
+    font-size: 18px;
+    transition: transform 0.3s ease;
+}
+
+.social-media li a:hover i,
+.social-media li a:hover .bilibili-icon {
+    transform: scale(1.2);
+}
+
+/* 在文件列表样式部分添加以下内容 */
+#file-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    padding-right: 10px; /* 增加右侧内边距 */
+}
+
+#file-list li a {
+    flex-grow: 1;
+    margin-right: 15px; /* 增加文件名和下载按钮之间的间距 */
+}
+
+/* 删除或注释掉以下样式 */
+
+.download-btn {
+    background-color: #f0f0f0;
+    color: #333;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    flex-shrink: 0;
+    position: relative;
+    overflow: hidden;
+    margin-left: auto; /* 将按钮推到右侧 */
+}
+
+.download-btn::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: radial-gradient(circle, #4CAF50, transparent 70%);
+    opacity: 0;
+    border-radius: 50%;
+    transition: opacity 0.3s ease;
+}
+
+.download-btn:hover::before {
+    opacity: 1;
+}
+
+.download-btn:hover {
+    transform: scale(1.1);
+}
+
+.download-btn i {
+    position: relative; /* 确保图标在伪元素之上 */
+    z-index: 1;
+}
+
+/* 隐藏"下载"文字 */
+.download-btn span {
+    display: none;
+}
+*/
+
+
+/* 确保body和html占满整个视口高度 */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto; /* 让main元素占据剩余空间 */
+    padding-bottom: 20px; /* 为页脚留出一些空间 */
+}
+
+footer {
+    flex-shrink: 0; /* 防止页脚被压缩 */
+}
+
+/* 移除可能导致额外空白的样式 */
+section:last-child {
+    margin-bottom: 0;
+}
+
+/* 确保最后一个元素没有底部边距 */
+main > *:last-child {
+    margin-bottom: 0;
+}
+
+/* 调整页脚样式以适应返回顶部按钮 */
+footer {
+    position: relative;
+    /* 移除 padding-right */
+}
+
+/* 移除社交媒体图标的右边距 */
+.social-media {
+    margin-right: 0;
+}
+
+#subway img {
+    max-width: 50%; /* 将最大宽度从70%减小到60% */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+#subway img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+    cursor: pointer;
+}
+
+/* 在文件末尾添加以下样式 */
+.fullscreen-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 9999;
+    justify-content: center;
+    align-items: center;
+}
+
+.fullscreen-image {
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
+    transition: transform 0.1s ease;
+    /* 移除 cursor: move; */
+}
+
+.close-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+
