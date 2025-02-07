@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HRMTR服务器</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- 添加Font Awesome图标库 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>HRMTR服务器</h1>
+            <img src="logo/HRMTR.jpg" alt="HRMTR Logo" class="logo">
+        </div>
+        <nav class="left-bottom-nav">
+            <ul>
+                <li><a href="#home">首页</a></li>
+                <li><a href="#gallery">站点照片</a></li>
+                <li><a href="#subway">地铁线路图</a></li>
+                <li><a href="#files">宣发文件</a></li>
+                <li><a href="#friends">友好服务器</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h2>欢迎来到HRMTR</h2>
+            <p>我们是一个我的世界MTR(轨道交通)服务器</p>
+        </section>
+
+        <section id="gallery">
+            <h2>我们的地铁站</h2>
+            <div class="carousel">
+                <!-- 这里将添加轮播图的JavaScript代码 -->
+                <!-- 代码有问题 ——LeonMMcoset -->
+                <img src="building1.jpg" alt="建筑1">
+                <img src="building2.jpg" alt="建筑2">
+                <img src="building3.jpg" alt="建筑3">
+            </div>
+        </section>
+
+        <section id="subway">
+            <h2>服务器地铁线路图</h2>
+            <img src="map/map.png" alt="HRMTR地铁线路图" style="max-width: 100%; height: auto;">
+        </section>
+
+        <section id="files">
+            <h2>服务器宣发文件</h2>
+            <ul id="file-list">
+                <!-- 这里将通过JavaScript动态加载服务器文件列表 -->
+            </ul>
+        </section>
+        <!-- 调试By LeonMMcoset -->
+        <!-- 这里用的是汪汪狗的代码 改了一下 ——LeonMMcoset -->
+        <section id="friends">
+            <h2>友好服务器</h2>
+            <ul id="friends-list">
+                <!-- 这里将通过JavaScript动态加载服务器列表 -->
+            </ul>
+        </section>
+        
+        <div class="friend-servers">
+            <!-- <div class="friend-server-leon">
+                <h3>Leon轨道交通</h3>
+                <a href="https://leonmmcoset.github.io/vitepress/teach/mtr7180.html" target="_blank">
+                    <svg class="bilibili-icon"></svg>
+                    跳转官网
+                </a>
+            </div>
+            <div class="friend-server-yunshan">
+                <h3>云山城市建设</h3>
+                <a href="javascript:;alert('暂时没有')" target="_blank">
+                    <svg class="bilibili-icon"></svg>
+                    此服务器未提供官网
+                </a>
+            </div>
+            <div class="friend-server-yongsheng">
+                <h3>永盛工艺</h3>
+                <a href="javascript:;alert('暂时没有')" target="_blank">
+                    <svg class="bilibili-icon"></svg>
+                    此服务器未提供官网
+                </a> -->
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <h3>关注我们的账号</h3>
+        <ul class="social-media">
+            <li>
+                <a href="https://space.bilibili.com/3546739434850830" target="_blank">
+                    <svg class="bilibili-icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M777.514667 131.669333a53.333333 53.333333 0 0 1 0 75.434667L728.746667 255.829333h49.92A160 160 0 0 1 938.666667 415.829333v320a160 160 0 0 1-160 160H245.333333A160 160 0 0 1 85.333333 735.829333v-320a160 160 0 0 1 160-160h49.749334L246.4 207.146667a53.333333 53.333333 0 1 1 75.392-75.434667l113.152 113.152c3.370667 3.370667 6.186667 7.04 8.448 10.965333h137.088c2.261333-3.925333 5.077333-7.594667 8.490667-11.008l113.109333-113.152a53.333333 53.333333 0 0 1 75.434667 0z m1.152 231.253334H245.333333a53.333333 53.333333 0 0 0-53.333333 53.333333v320a53.333333 53.333333 0 0 0 53.333333 53.333333h533.333334a53.333333 53.333333 0 0 0 53.333333-53.333333v-320a53.333333 53.333333 0 0 0-53.333333-53.333333z m-426.666667 106.666666c29.44 0 53.333333 23.893333 53.333333 53.333334v53.333333a53.333333 53.333333 0 1 1-106.666666 0v-53.333333c0-29.44 23.893333-53.333333 53.333333-53.333334z m320 0c29.44 0 53.333333 23.893333 53.333333 53.333334v53.333333a53.333333 53.333333 0 1 1-106.666666 0v-53.333333c0-29.44 23.893333-53.333333 53.333333-53.333334z" fill="currentColor"></path>
+                    </svg>
+                    哔哩哔哩
+                </a>
+            </li>
+            <li>
+                <a href="http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=SfNCTGPFOEFycX_NzNh7KPqHPWOgTcCV&authKey=jMpOnvU8DcAqQTkxsh1isS0gS2TIj1Fk0IZQLBMHogGAm%2Bpdnzlwe%2BDcU%2FDRRbMI&noverify=0&group_code=734607055" target="_blank">
+                    <i class="fab fa-qq"></i> QQ群
+                </a>
+            </li>
+        </ul>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
