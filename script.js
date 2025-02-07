@@ -59,7 +59,8 @@ function loadServerFriends() {
     const files = [
         { name: 'Leon轨道交通', path: 'https://leonmmcoset.github.io/vitepress/teach/mtr7180.html' },
         { name: '云山城市建设（暂时没有）', path: 'javascript:;alert(\'暂时没有\')' },
-        { name: '永盛工艺（暂时没有）', path: 'javascript:;alert(\'暂时没有\')' }
+        { name: '永盛工艺（暂时没有）', path: 'javascript:;alert(\'暂时没有\')' },
+        { name: 'MTR小众服务器', path: 'http://wujdyd.rth1.xyz'},
     ];
 
     fileList.innerHTML = ''; // 清空现有的列表
