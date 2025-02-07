@@ -58,8 +58,8 @@ function loadServerFriends() {
     // 使用实际的文件列表，将HRMTR服务器3rd铁路建设要求.pdf排在第一位
     const files = [
         { name: 'Leon轨道交通', path: 'https://leonmmcoset.github.io/vitepress/teach/mtr7180.html' },
-        { name: '云山城市建设', path: 'javascript:;alert(\'暂时没有\')' },
-        { name: '永盛工艺', path: 'javascript:;alert(\'暂时没有\')' }
+        { name: '云山城市建设（暂时没有）', path: 'javascript:;alert(\'暂时没有\')' },
+        { name: '永盛工艺（暂时没有）', path: 'javascript:;alert(\'暂时没有\')' }
     ];
 
     fileList.innerHTML = ''; // 清空现有的列表
