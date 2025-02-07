@@ -6,16 +6,16 @@
 }
 
 body, main, section {
-    background-color: #ffffff !important;
-    color: #333 !important;
-    border: none !important;
-    box-shadow: none !important;
+    background-color: #ffffff!important;
+    color: #333!important;
+    border: none!important;
+    box-shadow: none!important;
 }
 
 header, footer {
-    background-color: #333 !important;
-    color: #fff !important;
-    border: none !important;
+    background-color: #333!important;
+    color: #fff!important;
+    border: none!important;
 }
 
 /* 移除所有可能的背景图片或渐变 */
@@ -25,10 +25,10 @@ main::before,
 main::after,
 section::before,
 section::after {
-    content: none !important;
-    background: none !important;
-    border: none !important;
-    box-shadow: none !important;
+    content: none!important;
+    background: none!important;
+    border: none!important;
+    box-shadow: none!important;
 }
 
 /* 修改 main 样式 */
@@ -115,67 +115,36 @@ header h1 {
     margin-right: 2px; /* 将间距从5px减少到2px */
 }
 
+/* 提取公共样式 */
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    padding: 4px 6px;
+    border-radius: 3px;
+    position: relative;
+    overflow: hidden;
+    background-color: transparent;
+    display: inline-block;
+}
+
+.nav-link:hover {
+    color: #fff;
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: scale(1.05);
+}
+
 .left-bottom-nav ul li a {
-    color: #fff;
-    text-decoration: none;
+    /* 使用公共样式类 */
+    display: inline-flex;
+    align-items: center;
     font-size: 0.9rem;
-    transition: all 0.3s ease;
-    padding: 4px 6px; /* 减小内边距 */
-    border-radius: 3px;
+    padding: 5px 8px;
+    border-radius: 5px;
     position: relative;
     overflow: hidden;
-    background-color: transparent;
-    display: inline-block;
-}
-
-.left-bottom-nav ul li a:hover {
-    color: #fff;
-    text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
-    background-color: rgba(255, 255, 255, 0.2);
-    transform: scale(1.05);
-}
-/* LeonMMcoset */
-.friend-servers {
-    position: absolute;
-    bottom: 0.5rem;
-    left: 1rem;
-    z-index: 10;
-}
-
-.friend-servers ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-}
-
-.friend-servers ul li {
-    margin-right: 2px; /* 将间距从5px减少到2px */
-}
-
-.friend-servers ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 0.9rem;
-    transition: all 0.3s ease;
-    padding: 4px 6px; /* 减小内边距 */
-    border-radius: 3px;
-    position: relative;
-    overflow: hidden;
-    background-color: transparent;
-    display: inline-block;
-}
-
-.friend-servers ul li a:hover {
-    color: #fff;
-    text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
-    background-color: rgba(255, 255, 255, 0.2);
-    transform: scale(1.05);
-}
-
-/* 移除背景渐变效果 */
-.left-bottom-nav ul li a::before {
-    display: none;
 }
 
 nav {
@@ -196,14 +165,14 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff;
-    text-decoration: none;
+    /* 使用公共样式类 */
+    display: inline-flex;
+    align-items: center;
     font-size: 1.1rem;
-    transition: color 0.3s ease;
-}
-
-nav ul li a:hover {
-    color: #ddd;
+    padding: 5px 8px;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
 }
 
 .logo {
@@ -289,14 +258,14 @@ footer h3 {
 }
 
 .social-media li a i,
-.social-media li a .bilibili-icon {
+.social-media li a.bilibili-icon {
     margin-right: 6px; /* 图标和字之间的间距 */
     font-size: 18px; /* 稍微减小图标大小 */
     transition: transform 0.3s ease;
 }
 
 /* 为QQ图标添加特定样式 */
-.social-media li a .fab.fa-qq {
+.social-media li a.fab.fa-qq {
     font-size: 22px; /* 稍微调整QQ图标大小 */
 }
 
@@ -355,12 +324,12 @@ a:hover, button:hover {
         padding-bottom: 6rem; /* 在小屏幕增加多底部内边距 */
     }
 
-    .header-content {
+   .header-content {
         flex-direction: column;
         align-items: center;
     }
 
-    .logo {
+   .logo {
         margin-top: 1rem;
     }
 
@@ -373,7 +342,7 @@ a:hover, button:hover {
         margin: 0.5rem 0;
     }
 
-    .left-bottom-nav {
+   .left-bottom-nav {
         width: 100%;
         left: 0;
         bottom: 0;
@@ -381,12 +350,12 @@ a:hover, button:hover {
         background-color: rgba(0, 0, 0, 0.5);
     }
 
-    .left-bottom-nav ul {
+   .left-bottom-nav ul {
         justify-content: center;
         flex-wrap: wrap;
     }
 
-    .left-bottom-nav ul li {
+   .left-bottom-nav ul li {
         margin: 0.25rem 0.5rem;
     }
 }
@@ -450,23 +419,14 @@ main section {
 
 /* 恢复导航链接的特效 */
 .left-bottom-nav ul li a {
-    color: #fff;
-    text-decoration: none;
+    /* 使用公共样式类 */
+    display: inline-flex;
+    align-items: center;
     font-size: 1rem;
-    transition: all 0.3s ease;
     padding: 6px 12px;
     border-radius: 4px;
     position: relative;
     overflow: hidden;
-    background-color: transparent; /* 将背景色改为透明 */
-    display: inline-block;
-}
-
-.left-bottom-nav ul li a:hover {
-    color: #fff;
-    text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
-    background-color: rgba(255, 255, 255, 0.2); /* 保留悬停时的背色 */
-    transform: scale(1.05);
 }
 
 /* 移除背景渐变效果 */
@@ -510,31 +470,49 @@ main section {
 }
 
 .social-media li a i,
-.social-media li a .bilibili-icon {
+.social-media li a.bilibili-icon {
     margin-right: 6px;
     font-size: 18px;
     transition: transform 0.3s ease;
 }
 
 .social-media li a:hover i,
-.social-media li a:hover .bilibili-icon {
+.social-media li a:hover.bilibili-icon {
     transform: scale(1.2);
 }
+
 /* LeonMMcoset */
-.friend-servers li a {
-    color: #fff;
-    text-decoration: none;
+.friend-servers {
+    position: absolute;
+    bottom: 0.5rem;
+    left: 1rem;
+    z-index: 10;
+}
+
+.friend-servers ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.friend-servers ul li {
+    margin-right: 2px;
+}
+
+.friend-servers ul li a {
+    /* 使用公共样式类 */
     display: inline-flex;
     align-items: center;
     font-size: 0.9rem;
     padding: 5px 8px;
     border-radius: 5px;
-    transition: all 0.3s ease;
     position: relative;
     overflow: hidden;
 }
 
-.friend-servers li a::before {
+/* 移除之前重复的特效样式 */
+/* friend-servers li a::before {
     content: '';
     position: absolute;
     top: 0;
@@ -545,27 +523,27 @@ main section {
     transition: all 0.4s ease;
 }
 
-.friend-servers li a:hover {
+friend-servers li a:hover {
     background-color: rgba(255, 255, 255, 0.1);
     transform: translateY(-3px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.social-media li a:hover::before {
+friend-servers li a:hover::before {
     left: 100%;
 }
 
-.friend-servers li a i,
-.friend-servers li a .bilibili-icon {
+friend-servers li a i,
+friend-servers li a.bilibili-icon {
     margin-right: 6px;
     font-size: 18px;
     transition: transform 0.3s ease;
 }
 
-.friend-servers li a:hover i,
-.friend-servers li a:hover .bilibili-icon {
+friend-servers li a:hover i,
+friend-servers li a:hover.bilibili-icon {
     transform: scale(1.2);
-}
+} */
 
 /* 在文件列表样式部分添加以下内容 */
 #file-list li {
@@ -577,11 +555,9 @@ main section {
 }
 
 #file-list li a {
-    flex-grow: 1;
+    flex-grow:    1;
     margin-right: 15px; /* 增加文件名和下载按钮之间的间距 */
 }
-
-/* 删除或注释掉以下样式 */
 
 .download-btn {
     background-color: #f0f0f0;
@@ -631,8 +607,6 @@ main section {
 .download-btn span {
     display: none;
 }
-*/
-
 
 /* 确保body和html占满整个视口高度 */
 html, body {
@@ -721,4 +695,3 @@ footer {
     font-size: 30px;
     cursor: pointer;
 }
-
