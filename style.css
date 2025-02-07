@@ -134,6 +134,44 @@ header h1 {
     background-color: rgba(255, 255, 255, 0.2);
     transform: scale(1.05);
 }
+/* LeonMMcoset */
+.friend-servers {
+    position: absolute;
+    bottom: 0.5rem;
+    left: 1rem;
+    z-index: 10;
+}
+
+.friend-servers ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.friend-servers ul li {
+    margin-right: 2px; /* 将间距从5px减少到2px */
+}
+
+.friend-servers ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    padding: 4px 6px; /* 减小内边距 */
+    border-radius: 3px;
+    position: relative;
+    overflow: hidden;
+    background-color: transparent;
+    display: inline-block;
+}
+
+.friend-servers ul li a:hover {
+    color: #fff;
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: scale(1.05);
+}
 
 /* 移除背景渐变效果 */
 .left-bottom-nav ul li a::before {
