@@ -25,7 +25,7 @@ function loadServerFiles() {
     
     // 使用实际的文件列表，将HRMTR服务器3rd铁路建设要求.pdf排在第一位
     const files = [
-        { name: 'HRMTR服务器3rd铁路建设要求.pdf', path: 'file/HRMTR服务器3rd铁路建设要求.pdf' },
+        { name: 'HRMTR服务器3rd铁路建设要求', path: 'file/HRMTR服务器3rd铁路建设要求.pdf' },
         { name: 'HRMTR 071501 号文件', path: 'file/HRMTR 071501 号文件.pdf' },
         { name: 'HRMTR 081901 号文件', path: 'file/HRMTR 081901 号文件.pdf' },
         { name: 'HRMTR 082201 号文件', path: 'file/HRMTR 082201 号文件.pdf' },
