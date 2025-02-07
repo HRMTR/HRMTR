@@ -69,7 +69,7 @@ function loadServerFriends() {
         const a = document.createElement('a');
         a.href = file.path;
         a.innerHTML = '<i class="fas fa-server"></i> ' + file.name;
-        a.target = '_blank';
+        // a.target = '_blank';
         
         li.appendChild(a);
         fileList.appendChild(li);
