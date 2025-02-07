@@ -426,7 +426,7 @@ main section {
 }
 
 /* 调整轮播图和地铁线路图的样式 */
-.carousel, #subway img {
+.carousel, #subway img, #subway2 img {
     max-width: 80%;
     margin: 0 auto;
     display: block;
@@ -636,7 +636,7 @@ footer {
     margin-right: 0;
 }
 
-#subway img {
+#subway img, #subway2 img {
     max-width: 50%; /* 将最大宽度从70%减小到60% */
     height: auto;
     display: block;
@@ -645,7 +645,7 @@ footer {
     transition: all 0.3s ease;
 }
 
-#subway img:hover {
+#subway img:hover, #subway2 img:hover {
     transform: scale(1.05);
     box-shadow: 0 0 20px rgba(0,0,0,0.2);
     cursor: pointer;
