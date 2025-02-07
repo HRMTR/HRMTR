@@ -28,7 +28,9 @@ function loadServerFiles() {
         { name: 'HRMTR服务器3rd铁路建设要求.pdf', path: 'file/HRMTR服务器3rd铁路建设要求.pdf' },
         { name: 'HRMTR 071501 号文件.pdf', path: 'file/HRMTR 071501 号文件.pdf' },
         { name: 'HRMTR 081901 号文件.pdf', path: 'file/HRMTR 081901 号文件.pdf' },
-        { name: 'HRMTR 082201 号文件.pdf', path: 'file/HRMTR 082201 号文件.pdf' }
+        { name: 'HRMTR 082201 号文件.pdf', path: 'file/HRMTR 082201 号文件.pdf' },
+        { name: 'HRMTR 020701 号文件.pdf', path: 'file/HRMTR 020701 号文件.pdf' },
+        { name: 'HRMTR 020702 号文件.pdf', path: 'file/HRMTR 020702 号文件.pdf' }
     ];
 
     fileList.innerHTML = ''; // 清空现有的列表
