@@ -144,7 +144,7 @@ function setupFullscreenImage() {
 window.addEventListener('load', () => {
     setupCarousel();
     loadServerFiles();
-    loadServerFriends;
+    loadServerFriends();
     setupSmoothScrolling();
     setupFullscreenImage();
 });
