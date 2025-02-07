@@ -302,6 +302,36 @@ footer h3 {
 #file-list li a:hover i {
     transform: scale(1.2);
 }
+/* LeonMMcoset */
+#friends-list li a {
+    display: inline-flex;
+    align-items: center;
+    color: #333;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 1.5;
+    padding: 10px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    background-color: transparent; /* 移除背景色 */
+    border: none; /* 移除边框 */
+}
+
+#friends-list li a:hover {
+    background-color: rgba(0, 0, 0, 0.05); /* 添加轻微的悬停效果 */
+    transform: translateX(10px);
+}
+
+#friends-list li a i {
+    margin-right: 10px;
+    color: #cc0000; /* 保持PDF图标为红色 */
+    font-size: 24px;
+    transition: transform 0.3s ease;
+}
+
+#friends-list li a:hover i {
+    transform: scale(1.2);
+}
 
 a, button {
     color: #0066cc;
@@ -493,6 +523,20 @@ main section {
 }
 
 #file-list li a {
+    flex-grow: 1;
+    margin-right: 15px; /* 增加文件名和下载按钮之间的间距 */
+}
+
+/* LeonMMcoset */
+#friends-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    padding-right: 10px; /* 增加右侧内边距 */
+}
+
+#friends-list li a {
     flex-grow: 1;
     margin-right: 15px; /* 增加文件名和下载按钮之间的间距 */
 }
