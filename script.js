@@ -51,6 +51,37 @@ function loadServerFiles() {
         fileList.appendChild(li);
     }
 }
+// 复制了文件代码，改一下 ——LeonMMcoset //
+function loadServerFriends() {
+    const fileList = document.getElementById('friends-list');
+    
+    // 使用实际的文件列表，将HRMTR服务器3rd铁路建设要求.pdf排在第一位
+    const files = [
+        { name: 'HRMTR服务器3rd铁路建设要求.pdf', path: 'file/HRMTR服务器3rd铁路建设要求.pdf' },
+        { name: 'HRMTR 071501 号文件.pdf', path: 'file/HRMTR 071501 号文件.pdf' },
+        { name: 'HRMTR 081901 号文件.pdf', path: 'file/HRMTR 081901 号文件.pdf' }
+    ];
+
+    fileList.innerHTML = ''; // 清空现有的列表
+
+    files.forEach(file => {
+        const li = document.createElement('li');
+        const a = document.createElement('a');
+        a.href = file.path;
+        a.innerHTML = '<i class="fas fa-file-pdf"></i> ' + file.name;
+        a.target = '_blank';
+        
+        li.appendChild(a);
+        fileList.appendChild(li);
+    });
+
+    // 如果没有文件，显示一条消息
+    if (files.length === 0) {
+        const li = document.createElement('li');
+        li.textContent = '暂无可用网站';
+        fileList.appendChild(li);
+    }
+}
 
 // 添加平滑滚动功能
 function setupSmoothScrolling() {
@@ -113,6 +144,7 @@ function setupFullscreenImage() {
 window.addEventListener('load', () => {
     setupCarousel();
     loadServerFiles();
+    loadServerFriends;
     setupSmoothScrolling();
     setupFullscreenImage();
 });
