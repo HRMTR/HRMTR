@@ -55,7 +55,6 @@ function loadServerFiles() {
 function loadServerFriends() {
     const fileList = document.getElementById('friends-list');
     
-    // 使用实际的文件列表，将HRMTR服务器3rd铁路建设要求.pdf排在第一位
     const files = [
         { name: 'Leon轨道交通', path: 'https://leonmmcoset.github.io/vitepress/teach/mtr7180.html' },
         { name: '云山城市建设（暂无官网）', path: 'javascript:;alert(\'暂无官网\')' },
