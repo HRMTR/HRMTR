@@ -57,9 +57,9 @@ function loadServerFriends() {
     
     // 使用实际的文件列表，将HRMTR服务器3rd铁路建设要求.pdf排在第一位
     const files = [
-        { name: 'HRMTR服务器3rd铁路建设要求.pdf', path: 'file/HRMTR服务器3rd铁路建设要求.pdf' },
-        { name: 'HRMTR 071501 号文件.pdf', path: 'file/HRMTR 071501 号文件.pdf' },
-        { name: 'HRMTR 081901 号文件.pdf', path: 'file/HRMTR 081901 号文件.pdf' }
+        { name: 'Leon轨道交通', path: 'https://leonmmcoset.github.io/vitepress/teach/mtr7180.html' },
+        { name: '云山城市建设', path: 'javascript:;alert(\'暂时没有\')' },
+        { name: '永盛工艺', path: 'javascript:;alert(\'暂时没有\')' }
     ];
 
     fileList.innerHTML = ''; // 清空现有的列表
@@ -68,7 +68,7 @@ function loadServerFriends() {
         const li = document.createElement('li');
         const a = document.createElement('a');
         a.href = file.path;
-        a.innerHTML = '<i class="fas fa-file-pdf"></i> ' + file.name;
+        a.innerHTML = '<i class="fas fa-server"></i> ' + file.name;
         a.target = '_blank';
         
         li.appendChild(a);
