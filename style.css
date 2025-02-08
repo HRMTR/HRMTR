@@ -734,3 +734,9 @@ footer {
         margin: 10px 0;
     }
 }
+
+@media screen and (min-width: 601px) {
+    .left-bottom-nav button {
+        display: none;
+    }
+}
