@@ -150,4 +150,10 @@ window.addEventListener('load', () => {
     loadServerFriends();
     setupSmoothScrolling();
     setupFullscreenImage();
+    const toggleNavButton = document.getElementById('toggle-nav');
+    const nav = document.querySelector('.left-bottom-nav');
+
+    toggleNavButton.addEventListener('click', () => {
+        nav.classList.toggle('show');
+    });
 });
