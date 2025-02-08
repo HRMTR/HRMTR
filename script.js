@@ -86,6 +86,7 @@ function loadServerFriends() {
 }
 
 // 添加平滑滚动功能
+// 好代码，拿走了（ ——LeonMMcoset //
 function setupSmoothScrolling() {
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
